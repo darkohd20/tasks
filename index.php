@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
-                    <p class="validation-2"></p>
+                    <p class="validation-2  "></p>
                 </div>
 
                 <button type="submit" class="save-button">Ingresar</button>

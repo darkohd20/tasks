@@ -11,6 +11,16 @@ formulario.addEventListener("submit", (event) => {
     const emailValue = email.value.trim();
     const passwordValue = password.value;
 
+    const valid = validationForm(emailValue, passwordValue);
+
+    if (!valid) {
+        return;
+    }
+});
+
+function validationForm(emailValue, passwordValue) {
+    let valid = true;
+
     validation.textContent = "";
     validation2.textContent = "";
 
@@ -18,11 +28,16 @@ formulario.addEventListener("submit", (event) => {
 
     if (emailValue === "") {
         validation.textContent = "El campo no puede estar vacío";
+        valid = false;
     } else if (!emailRegex.test(emailValue)) {
         validation.textContent = "El correo no es válido";
+        valid = false;
     }
 
     if (passwordValue === "") {
         validation2.textContent = "El campo no puede estar vacío";
+        valid = false;
     }
-});
+
+    return valid;
+}
