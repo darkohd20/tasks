@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +14,7 @@
 
             <h1>Login</h1>
 
-            <form id="formulario-login" method="post" >
+            <form id="formulario-login" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email">
@@ -25,8 +24,10 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
-                    <p class="validation-2  "></p>
+                    <p class="validation-2"></p>
                 </div>
+
+                <p class="login-message"></p>
 
                 <button type="submit" class="save-button">Ingresar</button>
             </form>
@@ -36,7 +37,7 @@
             </p>
         </section>
     </main>
-    <script src="js/login.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>
