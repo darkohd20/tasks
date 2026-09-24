@@ -22,17 +22,20 @@ unset($_SESSION['toast'], $_SESSION['toast_type']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasks</title>
+    <title>TaksPav | Tareas</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <span class="navbar-user">
-                Hola, <?= htmlspecialchars($userName) ?>
-            </span>
-            <a href="../php/logout.php" class="navbar-logout">Cerrar sesión</a>
+            <span class="navbar-brand">TaksPav</span>
+            <div class="navbar-right">
+                <span class="navbar-user">
+                    Hola, <?= htmlspecialchars($userName) ?>
+                </span>
+                <a href="../php/logout.php" class="navbar-logout">Cerrar sesión</a>
+            </div>
         </div>
     </nav>
     <main class="container">

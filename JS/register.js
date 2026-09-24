@@ -30,7 +30,7 @@ formulario.addEventListener("submit", async (event) => {
         const data = await respuesta.json();
 
         if (data.statusCode === 201) {
-            window.location.href = "../index.php";
+            window.location.href = "../index.html";
         } else {
             registerMessage.textContent = data.message;
         }
